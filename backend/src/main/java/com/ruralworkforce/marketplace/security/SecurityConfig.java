@@ -54,21 +54,12 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        // Allow localhost for development AND Vercel URL for production
-        // FRONTEND_URL env var is set in Railway to your Vercel URL
-        String frontendUrl = System.getenv("FRONTEND_URL");
-        if (frontendUrl != null && !frontendUrl.isBlank()) {
-            config.setAllowedOrigins(List.of(
-                "http://localhost:3000",
-                frontendUrl,
-                "https://rural-workforce-marketplace-dov6.vercel.app"
-            ));
-        } else {
-            config.setAllowedOrigins(List.of(
-                "http://localhost:3000",
-                "https://rural-workforce-marketplace-dov6.vercel.app"
-            ));
-        }
+        // Allow all vercel.app subdomains + localhost
+        config.setAllowedOriginPatterns(List.of(
+            "http://localhost:3000",
+            "https://*.vercel.app",
+            "https://rural-workforce-marketplace-dov6.vercel.app"
+        ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
