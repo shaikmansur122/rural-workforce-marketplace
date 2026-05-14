@@ -1,0 +1,23 @@
+-- Demo workers seed data
+-- Password for all: "password123" (BCrypt hash)
+INSERT INTO users (name, phone, password, role, rating, skills, bio, experience_years, total_jobs_completed) VALUES
+('Ramu Yadav',     '9876543201', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.80, 'Farming, Harvesting',         'Experienced paddy and wheat farmer from Bihar. Reliable and hardworking.', 8,  42),
+('Suresh Kumar',   '9876543202', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.50, 'Carpentry, Furniture Making',  'Skilled carpenter with expertise in wooden furniture and door frames.', 12, 67),
+('Mohan Lal',      '9876543203', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.20, 'Plumbing, Pipe Fitting',       'Expert plumber handling residential and commercial plumbing work.', 6,  31),
+('Priya Devi',     '9876543204', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.90, 'Cooking, Catering',            'Professional cook specializing in North Indian and South Indian cuisine.', 10, 88),
+('Arjun Singh',    '9876543205', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 3.80, 'Masonry, Brick Laying',        'Experienced mason for house construction and wall building.', 9,  55),
+('Kavitha Reddy',  '9876543206', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.60, 'Tailoring, Stitching',         'Expert tailor for traditional and modern garments. Fast delivery.', 7,  120),
+('Ramesh Patel',   '9876543207', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.10, 'Electrical Work, Wiring',      'Certified electrician for home wiring, switchboards and repairs.', 5,  28),
+('Sunita Kumari',  '9876543208', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.70, 'Weaving, Handicrafts',         'Traditional weaver making sarees and handloom products.', 15, 95),
+('Dinesh Verma',   '9876543209', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 3.90, 'Painting, Whitewashing',       'House painter with experience in interior and exterior painting.', 4,  19),
+('Lakshmi Bai',    '9876543210', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.40, 'Dairy Farming, Animal Care',   'Experienced in cow and buffalo dairy farming and milk production.', 11, 60),
+('Vijay Sharma',   '9876543211', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.30, 'Driving, Vehicle Maintenance', 'Licensed driver with experience in tractor and truck driving.', 8,  47),
+('Meena Gupta',    '9876543212', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.80, 'Embroidery, Knitting',         'Skilled in traditional embroidery and knitting for garments.', 13, 110),
+('Santosh Nair',   '9876543213', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.00, 'Fishing, Net Making',          'Professional fisherman with expertise in net making and boat handling.', 20, 200),
+('Geeta Devi',     '9876543214', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.50, 'Vegetable Farming, Irrigation', 'Expert in vegetable cultivation and drip irrigation systems.', 6,  38),
+('Rajesh Tiwari',  '9876543215', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 3.70, 'Welding, Metal Work',          'Skilled welder for iron gates, grills and structural metalwork.', 7,  33),
+('Anita Joshi',    '9876543216', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.60, 'Pottery, Clay Work',           'Traditional potter making clay pots, diyas and decorative items.', 18, 150),
+('Bharat Chauhan', '9876543217', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.20, 'Roofing, Tiling',              'Expert in roof tiling, waterproofing and terrace work.', 10, 52),
+('Savitri Rao',    '9876543218', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.90, 'Healthcare, Midwifery',        'Trained healthcare worker and midwife serving rural communities.', 14, 300),
+('Prakash Meena',  '9876543219', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.10, 'Stone Cutting, Quarrying',     'Experienced stone cutter for construction and decorative stonework.', 9,  44),
+('Champa Devi',    '9876543220', '$2a$12$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWu', 'WORKER', 4.70, 'Silk Weaving, Dyeing',         'Expert in silk weaving and natural fabric dyeing techniques.', 16, 130);

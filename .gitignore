@@ -1,0 +1,77 @@
+# ============================================================
+# Rural Workforce Marketplace — .gitignore
+# ============================================================
+
+# ── Java / Maven (Backend) ──────────────────────────────────
+backend/target/
+backend/*.jar
+backend/*.war
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.jqwik-database
+*.class
+
+# Maven wrapper (optional — keep if you want others to build without Maven installed)
+# !backend/.mvn/wrapper/maven-wrapper.jar
+
+# ── Spring Boot ─────────────────────────────────────────────
+backend/src/main/resources/application.properties
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-local.properties
+
+# Keep the example/template
+!backend/src/main/resources/application.properties.example
+
+# ── Uploaded files (profile images stored locally) ──────────
+backend/uploads/
+
+# ── Node.js / React (Frontend) ──────────────────────────────
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ── IDE & Editor ────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── OS Files ────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ── Database / SQL secrets ──────────────────────────────────
+# Keep demo SQL files but ignore any files with real credentials
+*credentials*.sql
+*secrets*.sql
+
+# ── Misc ────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.orig
+.cache/
+dist/

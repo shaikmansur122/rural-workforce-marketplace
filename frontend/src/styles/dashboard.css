@@ -1,0 +1,88 @@
+@import './design-system.css';
+
+/* Job card specific */
+.job-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform .2s, box-shadow .2s;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.job-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+.job-card-header {
+  padding: 14px 18px 10px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-badge {
+  background: var(--primary-light); color: var(--primary);
+  font-size: 12px; font-weight: 700;
+  padding: 4px 12px; border-radius: var(--radius-full);
+  text-transform: capitalize;
+}
+
+.status-badge {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: var(--radius-full);
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.status-badge.open { background: #d1fae5; color: #065f46; }
+.status-badge.pending { background: #fef3c7; color: #92400e; }
+.status-badge.accepted { background: #d1fae5; color: #065f46; }
+.status-badge.rejected { background: #fee2e2; color: #991b1b; }
+.status-badge.booked { background: #dbeafe; color: #1e40af; }
+.status-badge.completed { background: #f3e8ff; color: #6b21a8; }
+
+.job-card-body { padding: 14px 18px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+
+.provider-name { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+
+.job-info-row {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: var(--text-muted);
+}
+.job-info-row svg { color: var(--primary); flex-shrink: 0; }
+.wage-value { font-weight: 700; color: var(--success); font-size: 14px; }
+
+.provider-rating { display: flex; align-items: center; gap: 4px; font-size: 13px; color: #f59e0b; font-weight: 600; }
+
+.btn-interested {
+  width: 100%; padding: 10px; border: none; border-radius: var(--radius-sm);
+  background: var(--primary); color: #fff;
+  font-size: 14px; font-weight: 600; font-family: var(--font);
+  cursor: pointer; transition: background .15s, transform .1s;
+  margin-top: auto; padding-top: 10px;
+}
+.btn-interested:hover:not(:disabled) { background: var(--primary-dark); }
+.btn-interested:active:not(:disabled) { transform: scale(.99); }
+.btn-interested:disabled { opacity: .55; cursor: not-allowed; }
+
+.btn-already-interested {
+  width: 100%; padding: 10px; border: none; border-radius: var(--radius-sm);
+  background: #f1f5f9; color: var(--text-muted);
+  font-size: 14px; font-weight: 600; font-family: var(--font);
+  cursor: not-allowed; margin-top: auto;
+}
+
+/* Profile card */
+.wf-profile-card { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 20px 24px; display: flex; align-items: center; gap: 16px; margin-bottom: 24px; box-shadow: var(--shadow-sm); flex-wrap: wrap; }
+.wf-avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #eef2ff, #c7d2fe); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 22px; font-weight: 700; flex-shrink: 0; }
+.wf-profile-name { font-size: 17px; font-weight: 700; color: var(--text); }
+.wf-profile-meta { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.wf-skill-chip { display: inline-flex; align-items: center; padding: 3px 10px; background: var(--primary-light); color: var(--primary); border-radius: var(--radius-full); font-size: 12px; font-weight: 500; margin: 2px; }
+
+/* Pagination */
+.wf-pagination { display: flex; justify-content: center; gap: 8px; margin-top: 24px; }
+.wf-page-btn { padding: 7px 16px; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: var(--surface); color: var(--text-muted); font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; font-family: var(--font); }
+.wf-page-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+.wf-page-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* Spinner */
+.wf-spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: wf-spin .7s linear infinite; }
+@keyframes wf-spin { to { transform: rotate(360deg); } }
+.wf-loading { display: flex; justify-content: center; padding: 60px 0; }
+.wf-empty { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 15px; }
