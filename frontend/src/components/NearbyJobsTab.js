@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'react-toastify';
 import {
   MapPin, Navigation, Loader2, Star, Clock, Calendar,
-  Zap, CheckCircle, SlidersHorizontal, X, Map, List,
+  Zap, CheckCircle, SlidersHorizontal, X,
   RefreshCw, Wifi, WifiOff
 } from 'lucide-react';
 import api from '../api/axios';

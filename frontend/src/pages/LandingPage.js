@@ -324,7 +324,7 @@ export default function LandingPage() {
           <p className="text-sm text-gray-400">© 2026 WorkForce. Empowering rural India.</p>
           <div className="flex items-center gap-6">
             {['Privacy', 'Terms', 'Contact'].map(item => (
-              <a key={item} href="#" className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">{item}</a>
+              <a key={item} href="/" className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">{item}</a>
             ))}
           </div>
         </div>
