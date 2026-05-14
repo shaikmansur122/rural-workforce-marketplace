@@ -1,6 +1,3 @@
-# ============================================================
-# Rural Workforce Marketplace — .gitignore
-# ============================================================
 
 # ── Java / Maven (Backend) ──────────────────────────────────
 backend/target/
@@ -14,12 +11,10 @@ backend/.jqwik-database
 # !backend/.mvn/wrapper/maven-wrapper.jar
 
 # ── Spring Boot ─────────────────────────────────────────────
-backend/src/main/resources/application.properties
+# application.properties IS committed — it uses env var placeholders, no real secrets
+# backend/src/main/resources/application.properties  <-- NOT ignored
 backend/src/main/resources/application-prod.properties
 backend/src/main/resources/application-local.properties
-
-# Keep the example/template
-!backend/src/main/resources/application.properties.example
 
 # ── Uploaded files (profile images stored locally) ──────────
 backend/uploads/
